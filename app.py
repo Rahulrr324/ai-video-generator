@@ -13,7 +13,7 @@ def generate_tts(text, lang='en'):
     return temp_audio.name
 
 def transcribe_audio_whisper(audio_path):
-    client = OpenAI(api_key=st.secrets["openai_api_key"])
+    client = OpenAI(api_key=st.secrets["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"])
     with open(audio_path, "rb") as audio_file:
         audio_file.seek(0)
         response = client.audio.transcriptions.create(
