@@ -63,3 +63,4 @@ elif choice == "Voice Upload":
                 st.text_area("Transcribed Text", value=transcript)
                 img_url = generate_image(transcript)
                 st.image(img_url, caption="AI Generated Image", width=512)
+                
